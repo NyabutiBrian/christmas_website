@@ -3,21 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
 
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicons/white/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicons/white/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicons/white/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicons/white/site.webmanifest">
+
+    <!-- TITLE -->
+    <title>Merry Christmas</title>
+
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a9cdceb046.js" crossorigin="anonymous"></script>
+    <!-- CUSTOM STYLE -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        body {
+            background-image: url('.//assets/images/xmasGif.gif');
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
-<body class="min-h-screen overflow-hidden">
-    <section class="z-10">
-        <div class="max-w-screen">
-            <img src="./assets/images/xmasGif.gif" alt="xmas lights" class="w-full">
+<body class="min-h-screen font-Tangerine flex justify-center items-center oncontextmenu="return false"">
+
+    <!-- OVERLAY WELCOME PAGE-->
+    <div id="overlay" class="fixed top-0 left-0 w-full min-h-screen bg-darky flex flex-col items-center justify-between z-50">
+        <div class="-mt-5 md:-mt-20">
+            <img src="./assets/images/dark-wave-haikei-up.svg" alt="svg background up">
+        </div>
+
+        <div class="font-normal font-Poppins text-white flex items-center justify-center">
+            <span class="text-2xl mr-2"><i class="fa-solid fa-location-dot"></i> </span>
+            <h1 class="text-4xl" id="greeting"></h1>
+        </div>
+        
+        <div class="-mb-5 md:-mb-20">
+            <img src="./assets/images/dark-wave-haikei-down.svg" alt="svg background down">
+        </div>
+    </div>
+
+    <!-- MAIN PAGE -->
+    <section class="max-w-4xl mx-4 xl:mx-auto bg-transparent backdrop-blur-xl shadow-2xl rounded-3xl">
+        <div class="flex flex-col justify-center items-center text-white m-4">
+            <div class="flex flex-col items-center justify-center py-4 sm:px-16">
+                <h1 class="text-7xl font-semibold py-2">Merry Christmas</h1>
+                <p class="font-Poppins text-sm sm:text-md">
+                    As the holiday season embraces us with its warmth and joy, 
+                    I find myself reflecting on the blessings that surround us, 
+                    and at the forefront of my thoughts are each of you. In the spirit 
+                    of Christmas, I want to express my deepest gratitude for the love, 
+                    laughter, and shared moments that make our lives so rich. <br><br>
+                    May this festive season bring you peace, happiness, and the 
+                    comfort of loved ones. Let's embrace the magic of Christmas, 
+                    not just in the twinkling lights and festive decorations, but in 
+                    the love we share and the kindness we extend. May the coming year 
+                    be filled with new opportunities, renewed hope, and continued moments 
+                    of togetherness. <br><br>
+                    Wishing you a Merry Christmas and may the love 
+                    we share continue to brighten our lives and the lives of those around us.<br><br>
+                    <span class="font-Tangerine text-4xl">Momanyi_Brian</span>
+                    
+                </p>
+            </div>
+            <div class="flex flex-col items-center py-8">
+                <p class="font-Poppins mb-4 font-semibold text-lg">Jingle_Bell_Rock - Bobby_Helms</p>
+                <audio src="./assets/songs/jingleBellRock.mp3" controls></audio>
+            </div>
+            <div class="font-Poppins text-sm flex flex-col items-center space-y-4">
+                <p>Share this heartfelt message with friends and family</p>
+                <a href="https://momanyi-brian-portfolio.vercel.app/" target="portfolio" class="p-6 bg-success rounded-full hover:bg-secondary">Share</a>
+            </div>
         </div>
     </section>
 
-    <section class="absolute top-0 z-50">
-        <div>
-            <p class="text-whity">POET</p>
-        </div>
-    </section>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <!-- CUSTOM SCRIPT -->
+    <script src="./assets/js/script.js"></script>
 </body>
 </html>
