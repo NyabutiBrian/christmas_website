@@ -1,5 +1,5 @@
 // JavaScript code to change the text dynamically
-const greetings = ["Hello", "Jambo", "Shikwamo", "Wendete", "Bei", "Ebariba", "Mugie", "Sopa", "Chamgei"];
+const greetings = ["Hello", "Jambo", "Shikwamo", "Wendete", "Bei", "Ebariba", "Mugie","Chamgei", "Sopa"];
 let currentGreetingIndex = 0;
 const h1Element = document.querySelector('#greeting');
 
