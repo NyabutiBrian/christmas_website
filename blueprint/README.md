@@ -92,7 +92,6 @@ npm run build
 - [Tailwind Website](https://tailwindcss.com/)
 - Link - [Christmas Website](https://christmas-theta.vercel.app/)
 
-**More content to be added, feel free to add any engaging content**
 
 ## Author
 
